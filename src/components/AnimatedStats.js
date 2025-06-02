@@ -53,7 +53,7 @@ const AnimatedStats = () => {
 };
 
 const AnimatedNumber = ({ value }) => {
-  const motionValue = React.useRef(0);
+  //const motionValue = React.useRef(0);
   const [display, setDisplay] = React.useState(0);
 
   React.useEffect(() => {
