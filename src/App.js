@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import CallToAction from './components/CallToAction';
+import Footer from './components/Footer';
+import Contact from './components/contact';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+
+      {/* 🔑 ID must match nav link hrefs */}
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="features">
+        <Features />
+      </section>
+
+      <section id="pricing">
+        <CallToAction />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+      <Footer />
+
+      
+    </>
   );
-}
+};
 
 export default App;
